@@ -7,6 +7,8 @@ import {MdGridListModule} from '@angular/material';
 import {MdButtonModule} from '@angular/material';
 import { ArgumentComponent } from './argument/argument.component'
 import { MdIconModule} from '@angular/material';
+import { MdCardModule } from '@angular/material';
+import { MdInputModule } from '@angular/material';
 import { LoginComponent } from './login/login.component'
 
 @NgModule({
@@ -19,7 +21,9 @@ import { LoginComponent } from './login/login.component'
     BrowserModule,
     MdGridListModule,
     MdButtonModule,
-    MdIconModule
+    MdIconModule,
+    MdCardModule,
+    MdInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
