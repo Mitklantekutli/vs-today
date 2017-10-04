@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import {MdGridListModule} from '@angular/material';
 import {MdButtonModule} from '@angular/material';
 import { ArgumentComponent } from './argument/argument.component'
-import { MdIconModule} from '@angular/material'
+import { MdIconModule} from '@angular/material';
+import { LoginComponent } from './login/login.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArgumentComponent
+    ArgumentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

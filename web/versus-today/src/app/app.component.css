@@ -1,0 +1,23 @@
+.menu-top {
+  height: 30px;
+  background: gray;
+  width: 500px;
+}
+
+.login-info {
+  width: 160px;
+  background: orangered;
+  float: right;
+  align-self: flex-end;
+}
+
+.menu-element {
+  background: goldenrod;
+  width: 60px;
+  float: left;
+  margin: 10px;
+}
+
+.content {
+  background: greenyellow;
+}
