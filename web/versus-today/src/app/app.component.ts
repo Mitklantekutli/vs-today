@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {MdDialog} from '@angular/material';
+import {LoginDialogComponent} from './login-dialog/login-dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -6,11 +9,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  tiles = [
-    {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
-    {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
-    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
-  ];
+  public authorized = false;
+  public user = {login:'Vladislav', password:'eee'};
+  public username;
+
+  constructor(public dialog: MdDialog){
+
+  }
+
+  public login() {
+    this.openDialog();
+  }
+  public logout() {
+    this.authorized = false;
+  }
+  public openDialog() {
+    var ref = this.dialog.open(LoginDialogComponent, {
+        data: this.user,
+    });
+    ref.afterClosed().subscribe(result=>{
+      this.authorized = true;
+      this.user = result;
+    });
+  }
+
+  public week1() {
+    this.user.login += 'q';
+  }
 }

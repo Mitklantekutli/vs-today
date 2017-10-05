@@ -1,14 +1,26 @@
 <div class="menu-top">
   <div></div>
-  <button  md-button class="menu-element">week 1</button>
+  <button  md-button class="menu-element" (click)="week1()">week 1</button>
   <button  md-button class="menu-element">week 2</button>
-  <div class="login-info">
-    <button  md-button class="menu-element-login">login</button>
+  <div class="login-holder">
+
+    <div *ngIf="authorized" class="login-info">
+      <div class="login-user">
+        {{user.login}}
+      </div>
+      <div>
+        <button md-button class="login-button" (click)="logout()">Logout</button>
+      </div>
+    </div>
+    <div *ngIf="!authorized" class="login-info">
+      <button  md-button class="login-button" (click)="login()">login</button>
+    </div>
+
   </div>
 </div>
 
 <div class="content">
   <div class="content-bg"></div>
   <div>content</div>
-  <app-login></app-login>
+
 </div>

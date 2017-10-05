@@ -6,16 +6,11 @@
 .login-card{
   width: 300px;
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
 }
 .form-holder{
   display: flex;
-  justify-content: center;
-}
-.login-form {
   width: 200px;
-  display: flex;
   justify-content: flex-end;
   flex-direction: column;
 }
