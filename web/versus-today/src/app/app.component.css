@@ -33,7 +33,7 @@
 }
 .content-bg {
   position: absolute;
-  background: lawngreen;
+  background: #63ccff;
   opacity: 0.3;
   width: 100%;
   height: 100%;
@@ -42,6 +42,15 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+.person-panel {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.person-left,
+.person-right {
+  width: 45%;
 }
 button {
   font-family: inherit;

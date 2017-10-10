@@ -5,6 +5,7 @@
   margin: 4px;
 
   border: 4px solid #006db3;
+  border: 4px solid #ffffff;
   border-radius: 4px;
 }
 
@@ -23,7 +24,7 @@
 }
 
 .arg-panel{
-  background: #63ccff;
+  background: #ffffff;
   height: 40px;
   display: flex;
   justify-content: space-around;

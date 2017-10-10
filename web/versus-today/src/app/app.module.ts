@@ -43,13 +43,19 @@ import {
 
 import {FormsModule} from '@angular/forms';
 import { ArgComponent } from './arg/arg.component';
+import { PersonComponent } from './person/person.component';
+import { PersonCardComponent } from './person-card/person-card.component';
+import { PersonArgsComponent } from './person-args/person-args.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArgumentComponent,
     LoginDialogComponent,
-    ArgComponent
+    ArgComponent,
+    PersonComponent,
+    PersonCardComponent,
+    PersonArgsComponent
   ],
   imports: [
     FormsModule,
