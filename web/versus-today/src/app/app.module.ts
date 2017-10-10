@@ -42,12 +42,14 @@ import {
 } from '@angular/material';
 
 import {FormsModule} from '@angular/forms';
+import { ArgComponent } from './arg/arg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArgumentComponent,
-    LoginDialogComponent
+    LoginDialogComponent,
+    ArgComponent
   ],
   imports: [
     FormsModule,
